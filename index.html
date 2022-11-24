@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+  <title>Document</title>
+  <!-- fontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- normalize css -->
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="./styles/styles.css">
+  
+</head>
+<body>
+  <div class="card">
+    <div class="card-container">
+      <div class="weapons-title">
+        <span class="title">Rock</span>
+        <span class="title">Paper</span>
+        <span class="title">Scissors</span>
+        <span class="title">lizard</span>
+        <span class="title">Spock</span>
+      </div>
+      <div class="score-container">
+        <p >user score :<span class="user-scr">0</span></p>
+        <p >comp score :<span class="comp-scr">0</span></p>
+      </div>
+    </div>
+      <div class="weapons-icon">
+        <button class="weapons" onclick="playGame('rock')"><i class="fa-solid fa-hand-back-fist"></i></button>
+
+        <button class="weapons" onclick="playGame('paper')"><i class="fa-solid fa-hand"></i></button>
+
+        <button class="weapons" onclick="playGame('scissors')"><i class="fa-solid fa-hand-scissors"></i></button>
+
+        <button class="weapons" onclick="playGame('lizard')"><i class="fa-solid fa-hand-lizard"></i></i></button>
+
+        <button class="weapons" onclick="playGame('spock')"><i class="fa-solid fa-hand-spock"></i></button>
+
+
+
+
+
+      </div>
+      <div class="result-container">
+        <p class="user-choice"></p>
+        <p class="com-choice"></p>
+        <p class="result"></p>
+      </div>
+
+    
+  </div>
+  
+
+<!-- script js -->
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
