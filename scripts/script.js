@@ -1,8 +1,6 @@
-
+// get elements
 const userScoreEl = document.querySelector('.user-scr');
 const comScoreEl = document.querySelector('.comp-scr')
-
-
 
 // variables
 let userScore = 0;
