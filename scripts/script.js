@@ -1,6 +1,7 @@
 // get elements
 const userScoreEl = document.querySelector('.user-scr');
-const comScoreEl = document.querySelector('.comp-scr')
+const comScoreEl = document.querySelector('.comp-scr');
+
 
 // variables
 let userScore = 0;
@@ -34,14 +35,11 @@ const playGame = function(weapon){
     userScore = userScore + 1;
   }else if (result === 'LOST'){
     comScore = comScore + 1;
-  }
+  };
   
 
   userScoreEl.innerText = userScore;
   comScoreEl.innerText = comScore;
-
-  console.log((comScoreEl))
-
 
   document.querySelector('.user-choice').innerText = `You Selected ${user}`;
   document.querySelector('.com-choice').innerText = `computer Selected ${comp}`;
@@ -64,7 +62,7 @@ const getResult = function(userChoice , comChoice){
       return 'WON';
     }else if(comChoice === 'spock'){
       return 'LOST';
-    }
+    };
 
       }else if(userChoice === 'paper'){
         if(comChoice === 'rock'){
@@ -77,7 +75,7 @@ const getResult = function(userChoice , comChoice){
           return 'LOST';
         }else if(comChoice === 'spock'){
           return 'WON';
-        }
+        };
 
       }else if(userChoice === 'scissors'){
         if(comChoice === 'rock'){
@@ -90,7 +88,7 @@ const getResult = function(userChoice , comChoice){
           return 'WON';
         }else if(comChoice === 'spock'){
           return 'LOST';
-        }
+        };
 
       }else if(userChoice === 'lizard'){
         if(comChoice === 'rock'){
@@ -118,5 +116,5 @@ const getResult = function(userChoice , comChoice){
       }else if(comChoice === 'spock'){
          return 'DRAW';
     }}
-  }
+  };
 
